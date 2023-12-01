@@ -1,26 +1,6 @@
 <template>
   <div id="app" class="wrapper">
     <Header />
-    <div class="content-wrapper">
-      <!-- Content Header (Page header) -->
-      <section class="content-header">
-        <div class="container-fluid">
-          <div class="row mb-2">
-            <div class="col-sm-6">
-              <h1>Dashboard</h1>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Main content -->
-      <section class="content">
-        <div class="container-fluid">
-          <!-- Your dashboard content goes here -->
-        </div>
-      </section>
-    </div>
-    <Footer />
   </div>
 </template>
 
@@ -29,6 +9,7 @@ import Header from './components/Header.vue';
 import Footer from './components/Footer.vue';
 import Home from './views/Home.vue';
 import About from './views/About.vue';
+import Admin from './adminlte/index.html';
 
 export default {
   components: {
@@ -36,10 +17,11 @@ export default {
     Footer,
     Home,
     About,
+    Admin,
   },
   data() {
     return {
-      currentView: 'home', // Set the default view
+      currentView: './adminlte/index.html', // Set the default view
     };
   },
   // App-level logic goes here
