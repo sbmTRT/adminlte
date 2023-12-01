@@ -5,11 +5,6 @@
   </div>
 </template>
 
-<script>
-export default {
-  // View-specific logic goes here
-}
-</script>
 
 <style scoped>
 /* View-specific styles go here */
@@ -19,4 +14,7 @@ export default {
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.1.0/dist/css/adminlte.min.css">
 
 <!-- Include AdminLTE JS from CDN -->
-<script src="https://cdn.jsdelivr.net/npm/admin-lte@3.1.0/dist/js/adminlte.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/admin-lte@3.1.0/dist/js/adminlte.min.js">
+export default {
+  // View-specific logic goes here
+}</script>
