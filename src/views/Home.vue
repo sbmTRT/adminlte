@@ -1,7 +1,15 @@
 <template>
-  <div>
-    <h2>Home Page</h2>
-    <!-- Home page content goes here -->
+  <div class="wrapper">
+    <!-- Sidebar -->
+    <aside class="main-sidebar">
+      <!-- Sidebar content goes here -->
+    </aside>
+
+    <!-- Content Wrapper -->
+    <div class="content-wrapper">
+      <h2>Home Page</h2>
+      <!-- Home page content goes here -->
+    </div>
   </div>
 </template>
 
@@ -14,3 +22,9 @@ export default {
 <style scoped>
 /* View-specific styles go here */
 </style>
+
+<!-- Include AdminLTE CSS from CDN -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.1.0/dist/css/adminlte.min.css">
+
+<!-- Include AdminLTE JS from CDN -->
+<script src="https://cdn.jsdelivr.net/npm/admin-lte@3.1.0/dist/js/adminlte.min.js"></script>
