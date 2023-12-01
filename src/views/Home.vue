@@ -1,4 +1,9 @@
-<template src="../adminLTE/index.html"></template>
+<template>
+  <div>
+    <h2>Home Page</h2>
+    <!-- Home page content goes here -->
+  </div>
+</template>
 
 <script>
 export default {
