@@ -1,10 +1,6 @@
 <template>
   <div id="app" class="wrapper">
-    <Header />
-    <a href="./adminLTE/index.html" target="_blank" rel="noreferrer">
-      LIFF Documentation
-    </a>
-    <Footer />
+    <Home />
   </div>
 </template>
 
