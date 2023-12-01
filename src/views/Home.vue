@@ -1,7 +1,15 @@
 <template>
-  <div class="content-wrapper">
-    <h2>Home Page</h2>
-    <!-- Home page content goes here -->
+  <div class="wrapper">
+    <!-- Sidebar -->
+    <aside class="main-sidebar">
+      <!-- Sidebar content goes here -->
+    </aside>
+
+    <!-- Content Wrapper -->
+    <div class="content-wrapper">
+      <h2>Home Page</h2>
+      <!-- Home page content goes here -->
+    </div>
   </div>
 </template>
 
