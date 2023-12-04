@@ -2,7 +2,8 @@
   <div class="wrapper">
     <Header />
     <Sidebar />
-    <Home />
+    <!-- The main app component includes the router view -->
+    <router-view />
     <Footer />
   </div>
   <!-- ./wrapper -->

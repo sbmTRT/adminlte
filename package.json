@@ -9,7 +9,8 @@
   "dependencies": {
     "@line/liff": "2.22.4",
     "admin-lte": "^3.2.0",
-    "vue": "3.3.9"
+    "vue": "3.3.9",
+    "vue-router": "^4.2.5"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "4.5.0",
