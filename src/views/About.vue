@@ -7,8 +7,8 @@
     <!-- Content Header (Page header) -->
     <div class="container-fluid">
       <div class="row mb-2">
-        <div class="col-sm-6">
-          <h1><i class="fas fa-edit"></i> お知らせ</h1>
+        <div class="col-md-12 col-sm-12 col-12">
+          <h2><i class="fas fa-edit"></i> お知らせ</h2>
         </div>
       </div>
     </div>
