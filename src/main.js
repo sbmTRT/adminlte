@@ -11,6 +11,10 @@ import App from './App.vue';
 // Route settings
 const routes = [
     {
+        path: '/',
+        redirect: '/selection',
+    },
+    {
         path: '/selection',
         name: 'Selection',
         component: Selection,
