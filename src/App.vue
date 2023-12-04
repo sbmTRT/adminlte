@@ -2,7 +2,7 @@
   <div class="wrapper">
     <Header />
     <Sidebar />
-      <router-view />
+    <Home />
     <Footer />
   </div>
   <!-- ./wrapper -->
