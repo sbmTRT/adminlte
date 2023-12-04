@@ -1,11 +1,11 @@
 <template>
+  <div class="content-wrapper">
   <Header />
   <Sidebar />
-  <div class="content-wrapper">
     <!-- The main app component includes the router view -->
     <router-view />
-  </div>
   <Footer />
+  </div>
 </template>
 
 <script>
