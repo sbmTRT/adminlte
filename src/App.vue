@@ -181,9 +181,28 @@
     <div class="content-wrapper">
       <!-- Main content -->
       <div class="content">
-        <div class="container-fluid">
-          <!-- Your page content goes here -->
-          <router-view></router-view>
+        <div class="container-fluid k_header">
+          <div class="col-md-12 col-sm-12 col-12">
+            <div class="info-box shadow">
+              <span class="info-box-icon bg-warning">
+                <i class="fas fa-wrench"></i>
+              </span>
+              <div class="info-box-content">
+                <span class="info-box-text text-sm">
+                  <div class="container-fluid">
+                    <div class="row">
+                      <div class="col-sm-auto"><b>【契約番号】</b> 03408349398</div>
+                      <div class="col-sm-auto"><b>【件名】</b> Tester </div>
+                      <div class="col-sm-auto"><b>【受注者】</b> KK2322422552</div>
+                    </div>
+                  </div>
+                </span>
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+            <!-- /.info-box -->
+          </div>
+          <!-- /.container-fluid -->
         </div>
         <!-- /.container-fluid -->
       </div>
