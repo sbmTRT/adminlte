@@ -23,6 +23,13 @@
         <nav class="mt-2">
           <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
             <li class="nav-header">工事記録入力編集</li>
+            <li class="nav-item">
+              <router-link class="nav-link" to="/Selection" id="sm_selection">
+                <i class="far fa-circle text-warning mleft"></i>
+                <p class="font-small">工種選択</p>
+              </router-link>
+                </li>
+            </li>
             <li class="nav-item" id="sm_kosyumenu">
               <a href="#" class="nav-link" id="nav-menu">
                 <i class="nav-icon fas fa-wrench text-warning"></i>
@@ -43,13 +50,19 @@
                     <p class="font-small">情報共有</p>
                   </router-link>
                 </li>
-                <li class="nav-item">
-                  <router-link class="nav-link" to="/Selection" id="sm_selection">
-                    <i class="far fa-circle text-warning mleft"></i>
-                    <p class="font-small">工種選択</p>
-                  </router-link>
-                </li>
               </ul>
+            </li>
+            <li class="nav-item">
+              <router-link class="nav-link" to="/Templates" id="sm_templates">
+                <i class="fas fa-download nav-icon text-pink"></i>
+                <p class="font-small">テンプレート</p>
+              </router-link>
+            </li>
+            <li class="nav-item">
+              <router-link class="nav-link" to="/DataImport" id="sm_dataimport">
+                <i class="fas fa-upload nav-icon text-success"></i>
+                <p class="font-small">データインポート</p>
+              </router-link>
             </li>
           </ul>
         </nav>
@@ -61,6 +74,11 @@
 
 <script>
 export default {
+  data() {
+    return {
+      isSelected: true, // Set to true for auto-selection
+    };
+  },
   // Other component logic...
 }
 </script>
