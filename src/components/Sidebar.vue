@@ -24,7 +24,7 @@
           <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
             <li class="nav-header">工事記録入力編集</li>
             <li class="nav-item">
-              <router-link class="nav-link" to="/" id="sm_select">
+              <router-link class="nav-link" to="/select" id="sm_select" v-bind:class="{ 'selected': isSelected }">
                 <i class="fas fa-search nav-icon text-info"></i>
                 <p class="font-small">工事選択</p>
               </router-link>
@@ -73,7 +73,12 @@
 
 <script>
 export default {
-  // Component logic goes here
+  data() {
+    return {
+      isSelected: true, // Set to true for auto-selection
+    };
+  },
+  // Other component logic...
 }
 </script>
 

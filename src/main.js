@@ -11,7 +11,7 @@ import App from './App.vue';
 // Route settings
 const routes = [
     {
-        path: '/',
+        path: '/select',
         name: 'Selection',
         component: Select,
     },
