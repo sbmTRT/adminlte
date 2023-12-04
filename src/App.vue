@@ -36,20 +36,59 @@
           </div>
         </div>
 
-        <!-- Sidebar Menu -->
-        <nav class="mt-2">
-          <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-            <!-- Add your menu items here -->
-            <li class="nav-item">
-              <router-link to="/dashboard" class="nav-link">
-                <i class="nav-icon fas fa-tachometer-alt"></i>
-                <p>Dashboard</p>
-              </router-link>
-            </li>
-            <!-- Add more menu items as needed -->
-          </ul>
-        </nav>
-        <!-- /.sidebar-menu -->
+    <!-- Sidebar Menu -->
+    <nav class="mt-2">
+      <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+        <!-- Dashboard -->
+        <li class="nav-item">
+          <router-link to="/dashboard" class="nav-link">
+            <i class="nav-icon fas fa-tachometer-alt"></i>
+            <p>Dashboard</p>
+          </router-link>
+        </li>
+
+        <!-- Register -->
+        <li class="nav-item">
+          <router-link to="/register" class="nav-link">
+            <i class="nav-icon fas fa-user-plus"></i>
+            <p>Register</p>
+          </router-link>
+        </li>
+
+        <!-- Update -->
+        <li class="nav-item">
+          <router-link to="/update" class="nav-link">
+            <i class="nav-icon fas fa-edit"></i>
+            <p>Update</p>
+          </router-link>
+        </li>
+
+        <!-- Delete -->
+        <li class="nav-item">
+          <router-link to="/delete" class="nav-link">
+            <i class="nav-icon fas fa-trash"></i>
+            <p>Delete</p>
+          </router-link>
+        </li>
+
+        <!-- Home -->
+        <li class="nav-item">
+          <router-link to="/" class="nav-link">
+            <i class="nav-icon fas fa-home"></i>
+            <p>Home</p>
+          </router-link>
+        </li>
+
+        <!-- Logout -->
+        <li class="nav-item">
+          <a href="#" class="nav-link" @click="logout">
+            <i class="nav-icon fas fa-sign-out-alt"></i>
+            <p>Logout</p>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- /.sidebar-menu -->
       </div>
       <!-- /.sidebar -->
     </aside>
