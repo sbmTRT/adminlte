@@ -38,7 +38,7 @@
             <i class="fas fa-user-tie fa-fw fa-2x fa-user-tie"></i>
           </div>
           <div class="info">
-            <span class="d-block" style="color: white">{{ user_nm }}</span>
+            <span class="d-block" style="color: white">SBMテスト者</span>
           </div>
         </div>
 
