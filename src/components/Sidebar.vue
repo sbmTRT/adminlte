@@ -24,7 +24,7 @@
           <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
             <li class="nav-header">工事記録入力編集</li>
             <li class="nav-item">
-              <router-link class="nav-link" to="/Selection" id="sm_select" v-bind:class="{ 'selected': isSelected }">
+              <router-link class="nav-link" to="/Selection" id="sm_select" >
                 <i class="fas fa-search nav-icon text-info"></i>
                 <p class="font-small">工事選択</p>
               </router-link>
@@ -38,7 +38,7 @@
               </a>
               <ul class="nav nav-treeview">
                 <li class="nav-item">
-                  <router-link class="nav-link" to="/Home" id="sm_home">
+                  <router-link class="nav-link" to="/Home" id="sm_home" v-bind:class="{ 'selected': isSelected }">
                     <i class="far fa-circle text-warning mleft"></i>
                     <p class="font-small">ホーム</p>
                   </router-link>
