@@ -47,6 +47,12 @@ export default {
 }
 </script>
 
-<style scoped>
-/* View-specific styles go here */
+
+<style>
+#toastrButton {
+  outline: 0.1rem solid;
+}
+.tooltip .tooltip-inner {
+  font-size: small;
+}
 </style>
