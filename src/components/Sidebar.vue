@@ -25,7 +25,7 @@
           <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
             <li class="nav-header">工事記録入力編集</li>
             <li class="nav-item">
-              <router-link class="nav-link" to="/" id="sm_constselect">
+              <router-link class="nav-link" to="/" id="sm_select">
                 <i class="fas fa-search nav-icon text-info"></i>
                 <p class="font-small">工事選択</p>
               </router-link>

@@ -5,6 +5,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 // Import components
 import Home from './views/Home.vue';
 import About from './views/About.vue';
+import Select from './views/Select.vue';
 import App from './App.vue';
 
 // Route settings
@@ -18,6 +19,11 @@ const routes = [
         path: '/about',
         name: 'About',
         component: About,
+    },
+    {
+        path: '/',
+        name: 'Select',
+        component: Select,
     }
 ];
 
