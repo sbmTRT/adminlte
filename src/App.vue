@@ -182,7 +182,7 @@
       <!-- Main content -->
       <div class="content">
         <div class="container-fluid k_header">
-          <div class="col-md-12 col-sm-12 col-12">
+          <div class="col-md-12 col-sm-12 col-12 mt-4">
             <div class="info-box shadow">
               <span class="info-box-icon bg-warning">
                 <i class="fas fa-wrench"></i>
