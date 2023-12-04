@@ -1,6 +1,6 @@
 <template>
     <Header />
-    <Sidebar target="sm_select" menu="close"/>
+    <Sidebar target="sm_select" menu="open"/>
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
         <!-- Content Header (Page header) -->
