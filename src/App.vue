@@ -27,7 +27,7 @@
       <!-- Brand Logo -->
       <a href="#" class="brand-link" style="pointer-events: none;">
         <img src="./assets/logomark.png" alt="Nexco Logo" class="brand-image" style="opacity: 1" />
-        <span class="brand-text font-weight-light small80"> 工事記録収集システム </span>
+        <span class="brand-text font-weight-light small80"> システム </span>
       </a>
 
       <!-- Sidebar -->
