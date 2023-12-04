@@ -29,6 +29,8 @@ import Header from './components/Header.vue';
 import Footer from './components/Footer.vue';
 import Home from './views/Home.vue';
 import About from './views/About.vue';
+import 'admin-lte/dist/css/adminlte.min.css';
+import 'admin-lte/dist/js/adminlte.min.js';
 
 export default {
   components: {
@@ -47,5 +49,27 @@ export default {
 </script>
 
 <style>
-@import url('https://cdn.jsdelivr.net/npm/admin-lte@3.0.5/dist/css/adminlte.min.css');
+/* You can add your custom styles here */
+
+/* Sidebar styles */
+.sidebar {
+  /* Add your styles for the sidebar here */
+}
+
+/* Main content styles */
+.content-wrapper {
+  /* Add your styles for the main content here */
+}
+
+/* Header styles */
+.main-header {
+  /* Add your styles for the header here */
+}
+
+/* Footer styles */
+.main-footer {
+  /* Add your styles for the footer here */
+}
+
+/* Additional styles based on your customization needs */
 </style>
