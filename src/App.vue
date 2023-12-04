@@ -208,8 +208,8 @@
 
 <script>
 import 'admin-lte/dist/css/adminlte.min.css';
-import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css';
 import 'admin-lte/dist/js/adminlte.min.js';
+import 'admin-lte/plugins/fontawesome-free/css/all.min.css';
 
 export default {
   name: 'AdminLTE',
