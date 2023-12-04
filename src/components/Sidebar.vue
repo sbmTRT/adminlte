@@ -39,15 +39,15 @@
               </a>
               <ul class="nav nav-treeview">
                 <li class="nav-item">
-                  <router-link class="nav-link" to="/Bank" id="sm_home">
+                  <router-link class="nav-link" to="/Home" id="sm_home">
                     <i class="far fa-circle text-warning mleft"></i>
-                    <p class="font-small">盛土</p>
+                    <p class="font-small">ホーム</p>
                   </router-link>
                 </li>
                 <li class="nav-item">
-                  <router-link class="nav-link" to="/Cutslope" id="sm_about">
+                  <router-link class="nav-link" to="/About" id="sm_about">
                     <i class="far fa-circle text-warning mleft"></i>
-                    <p class="font-small">切土のり面</p>
+                    <p class="font-small">情報共有</p>
                   </router-link>
                 </li>
                 <li class="nav-item">
