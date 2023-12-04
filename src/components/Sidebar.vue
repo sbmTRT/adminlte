@@ -25,10 +25,9 @@
             <li class="nav-header">工事記録入力編集</li>
             <li class="nav-item">
               <router-link class="nav-link" to="/Selection" id="sm_selection">
-                <i class="far fa-circle text-warning mleft"></i>
-                <p class="font-small">工種選択</p>
+                <i class="fas fa-search nav-icon text-info"></i>
+                <p class="font-small">工事選択</p>
               </router-link>
-                </li>
             </li>
             <li class="nav-item" id="sm_kosyumenu">
               <a href="#" class="nav-link" id="nav-menu">
@@ -48,6 +47,12 @@
                   <router-link class="nav-link" to="/About" id="sm_about">
                     <i class="far fa-circle text-warning mleft"></i>
                     <p class="font-small">情報共有</p>
+                  </router-link>
+                </li>
+                <li class="nav-item">
+                  <router-link class="nav-link" to="/Selection" id="sm_selection">
+                    <i class="far fa-circle text-warning mleft"></i>
+                    <p class="font-small">工種選択</p>
                   </router-link>
                 </li>
               </ul>
