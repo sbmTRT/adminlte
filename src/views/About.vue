@@ -1,7 +1,7 @@
 <template>
 
   <Header />
-  <Sidebar target="sm_bank" menu="open" />
+  <Sidebar target="sm_about" menu="open" />
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->

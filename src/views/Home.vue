@@ -1,4 +1,6 @@
 <template>
+  <Header />
+  <Sidebar target="sm_home" menu="open" />
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
     <!-- Content Header (Page header) -->
