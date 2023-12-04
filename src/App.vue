@@ -29,7 +29,7 @@ export default {
   },
   data() {
     return {
-      currentView: 'home', // Set the default view
+      currentView: 'about', // Set the default view
     };
   },
   // App-level logic goes here
