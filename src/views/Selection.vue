@@ -35,7 +35,7 @@
                                 <div class="input-group input-group-mb-3">
                                     <input type="text" class="form-control form-control-sm" id="keiyaku_no" name="keiyaku_no" placeholder="" />
                                     <span class="input-group-append">
-                                        <button type="reset" class="btn btn-info btn-flat btn-sm text-sm" @click="textboxClear('keiyaku_no')">クリア</button>
+                                        <button type="reset" class="btn btn-info btn-flat btn-sm text-sm">クリア</button>
                                     </span>
                                 </div>
                             </div>
@@ -46,27 +46,7 @@
                                 <div class="input-group input-group-mb-3">
                                     <input type="text" class="form-control form-control-sm" id="kenmei" name="kenmei" placeholder="" />
                                     <span class="input-group-append">
-                                        <button type="reset" class="btn btn-info btn-flat btn-sm text-sm" @click="textboxClear('kenmei')">クリア</button>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="input3" class="col-sm-2 col-form-label">事務所</label>
-                            <div class="col-sm-7">
-                                <div class="input-group input-group-mb-3">
-                                    <select class="form-control form-control-sm" id="jimusyo" name="jimusyo">
-                                        <option disable value=""></option>
-                                        <option
-                                            v-for="item in jimusyo_data"
-                                            :value="item.c_jimusyo"
-                                            :key="item.c_jimusyo"
-                                        >
-                                        {{ item.jimusyo_nm }}
-                                        </option>
-                                    </select>
-                                    <span class="input-group-append">
-                                        <button type="reset" class="btn btn-info btn-flat btn-sm text-sm" @click="textboxClear('jimusyo')">クリア</button>
+                                        <button type="reset" class="btn btn-info btn-flat btn-sm text-sm" >クリア</button>
                                     </span>
                                 </div>
                             </div>
@@ -74,7 +54,7 @@
                     </div>
                     <!-- /.card-body -->
                     <div class="card-footer text-center">
-                        <button type="button" class="btn btn-primary btn-sm w-25" id="const_search" @click="search()">検　索</button>
+                        <button type="button" class="btn btn-primary btn-sm w-25" id="const_search">検索</button>
                     </div>
                     <!-- /.card-footer-->
                 </div>
@@ -106,7 +86,7 @@
                             <!-- /.card-body -->
                             <div v-if="select_button">
                                 <div class="card-footer text-center">
-                                    <button type="button" class="btn btn-primary btn-sm w-25 k_select" @click="selection()">選　択</button>
+                                    <button type="button" class="btn btn-primary btn-sm w-25 k_select">選択</button>
                                 </div>
                             </div>
                             <!-- /.card-footer-->
