@@ -208,6 +208,7 @@
 
 <script>
 import 'admin-lte/dist/css/adminlte.min.css';
+import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css';
 import 'admin-lte/dist/js/adminlte.min.js';
 
 export default {
@@ -215,5 +216,6 @@ export default {
 };
 </script>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-
+<style>
+/* Add your custom styles here */
+</style>
