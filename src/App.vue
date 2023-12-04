@@ -1,12 +1,13 @@
 <template>
-  <div class="content-wrapper">
-  <Header />
-  <Sidebar />
+  <div class="wrapper">
+    <Header />
+    <Sidebar />
     <!-- The main app component includes the router view -->
     <router-view />
-  <Footer />
+    <Footer />
   </div>
 </template>
+
 
 <script>
 import 'admin-lte/dist/css/adminlte.min.css';
