@@ -5,15 +5,15 @@ import { createRouter, createWebHistory } from 'vue-router';
 // Import components
 import Home from './views/Home.vue';
 import About from './views/About.vue';
-import Select from './views/Selection.vue';
+import Selection from './views/Selection.vue';
 import App from './App.vue';
 
 // Route settings
 const routes = [
     {
-        path: '/select',
+        path: '/selection',
         name: 'Selection',
-        component: Select,
+        component: Selection,
     },
     {
         path: '/about',
