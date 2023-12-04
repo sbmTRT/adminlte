@@ -19,6 +19,7 @@ const routes = [
         name: 'About',
         component: About,
     },
+    { path: '*', redirect: '/home' },
 ];
 
 // Create a router instance
