@@ -82,7 +82,7 @@ export default {
         };
     },
     mounted() {
-        this.initializeLIFF();
+        await this.initializeLIFF();
     },
     methods: {
         async initializeLIFF() {
