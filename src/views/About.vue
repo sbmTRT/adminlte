@@ -98,7 +98,7 @@ export default {
             const pictureUrl = profile.pictureUrl;
             const statusMessage = profile.statusMessage;
             this.userid = userId;
-            this.diaplayname = displayName;
+            this.displayname = displayName;
             this.statusmessage = statusMessage;
           }).catch((error) => {
             console.error('Error getting user profile', error);
