@@ -1,6 +1,6 @@
 import { createApp } from 'vue';
 import App from './App.vue';
-import store from './store';
+import store from './stores/store';
 import router from './routers/router';
 
 // Create a Vue app instance with the router and store
