@@ -35,10 +35,10 @@
             <div class="info-box shadow  mt-4">
               <form @submit.prevent="submitForm">
                 <div class="row">
-                  <div class="col-sm-auto"><label for="userId">User ID:</label><b><input type="text" id="userId" v-model="userId" required></div>
+                  <div class="col-sm-auto"><b><label for="userId">User ID:</label></b><input type="text" id="userId" v-model="userId" required></div>
                 </div>
                 <div class="row">
-                  <div class="col-sm-auto"><label for="password">Password:</label><b><input type="password" id="password" v-model="password" required></div>
+                  <div class="col-sm-auto"><b><label for="password">Password:</label></b><input type="password" id="password" v-model="password" required></div>
                 </div>
                 <div class="row">
                   <div class="col-sm-auto"><button type="submit">Submit</button></div>
