@@ -34,7 +34,7 @@
                         </div>
                         <!-- /.info-box-content -->
                     </div>
-                    <div class="info-box shadow mt-4">
+                    <div class="info-box shadow mt-4" v-if="liffInitialized">
                         <span class="info-box-icon bg-warning">
                             <i class="fas fa-wrench"></i>
                         </span>
@@ -79,10 +79,11 @@ export default {
             liffid: import.meta.env.VITE_LIFF_ID,
             message: "",
             error: "",
+            liffInitialized: false,
         };
     },
     mounted() {
-        await this.initializeLIFF();
+        this.initializeLIFF();
     },
     methods: {
         async initializeLIFF() {
@@ -91,9 +92,11 @@ export default {
                     liffId: import.meta.env.VITE_LIFF_ID
                 });
                 this.message = "LIFF init succeeded.";
+                this.liffInitialized = true;
             } catch (e) {
                 this.message = "LIFF init failed.";
                 this.error = `${e}`;
+                this.liffInitialized = true;
             }
         },
     },
