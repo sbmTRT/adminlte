@@ -45,9 +45,9 @@
                                         <div v-if="submittedData">
                                             <div class="col-sm-auto"><b>【User ID】</b> {{ submittedData.userId }}</div>
                                             <div class="col-sm-auto"><b>【Password】</b> {{ submittedData.password }}</div>
-                                            <div class="col-sm-auto"><b>【LIFF ID】】</b> <p v-if="liffid"> {{ liffid }}</p></div>
-                                            <div class="col-sm-auto"><b>【message】</b> <p v-if="message">{{ message }}</p></div>
-                                            <div class="col-sm-auto"><b>【error】</b> <p v-if="error"><code>{{ error }}</code></p></div>
+                                            <div class="col-sm-auto"><b>【LIFF ID】】</b> {{ liffid }}</div>
+                                            <div class="col-sm-auto"><b>【message】</b> {{ message }}</div>
+                                            <div class="col-sm-auto"><b>【error】</b><code>{{ error }}</code></div>
                                         </div>
                                     </div>
                                 </div>
@@ -85,12 +85,17 @@ export default {
     methods: {
         async initLIFF() {
         try {
-            await liff.init({ liffId: this.liffid });
-            this.message = "LIFF init succeeded.";
-        } catch (e) {
+            liff
+                .init({
+                    liffId: import.meta.env.VITE_LIFF_ID
+                })
+                .then(() => {
+                    this.message = "LIFF init succeeded.";
+                })
+        }catch((e) => {
             this.message = "LIFF init failed.";
             this.error = `${e}`;
-        }
+        });
         },
     },
 };
