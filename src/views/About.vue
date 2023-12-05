@@ -46,11 +46,8 @@
                                         <div class="col-sm-auto"><b>【User ID】</b> {{ submittedData.userId }}</div>
                                         <div class="col-sm-auto"><b>【Password】</b> {{ submittedData.password }}</div>
                                         <div class="col-sm-auto"><b>【LIFF ID】】</b> <p v-if="liffid"> {{ liffid }}</p></div>
-                                        <div class="col-sm-auto"><b>【Line User ID】</b> <p v-if="userid">{{ userid }}</p></div>
-                                        <div class="col-sm-auto"><b>【Line User Name】</b> <p v-if="diaplayname">{{ diaplayname }}</p></div>
                                         <div class="col-sm-auto"><b>【message】</b> <p v-if="message">{{ message }}</p></div>
-                                        <div class="col-sm-auto"><b><p v-if="error"><code>{{ error }}</code></p></div>
-                                    </div>
+                                        <div class="col-sm-auto"><b>【error】</b> <p v-if="error"><code>{{ error }}</p></div>
                                     </div>
                                 </div>
                             </span>
@@ -93,19 +90,6 @@ export default {
             })
             .then(() => {
                 this.message = "LIFF init succeeded.";
-                if (liff.isLoggedIn()) {
-                    // Get user profile
-                    liff.getProfile().then((profile) => {
-                        const userId = profile.userId;
-                        const displayName = profile.displayName;
-                        this.userid = userId;
-                        this.diaplayname = displayName;
-                    }).catch((error) => {
-                        console.error('Error getting user profile', error);
-                    });
-                } else {
-                    this.userid = 'empty';
-                }
             }).catch((e) => {
                 this.message = "LIFF init failed.";
                 this.error = `${e}`;
