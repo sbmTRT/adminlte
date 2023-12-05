@@ -17,7 +17,7 @@
         <div class="content">
             <div class="container-fluid k_header">
                 <div class="col-md-12 col-sm-12 col-12">
-                    <div class="info-box shadow    mt-4">
+                    <div class="info-box shadow mt-4">
                         <span class="info-box-icon bg-warning">
                             <i class="fas fa-wrench"></i>
                         </span>
@@ -34,7 +34,7 @@
                         </div>
                         <!-- /.info-box-content -->
                     </div>
-                    <div class="info-box shadow    mt-4">
+                    <div class="info-box shadow mt-4">
                         <span class="info-box-icon bg-warning">
                             <i class="fas fa-wrench"></i>
                         </span>
@@ -77,25 +77,22 @@ export default {
     },
     data() {
         return {
-            userid: "",
-            error: "",
-            diaplayname: "",
             liffid: import.meta.env.VITE_LIFF_ID,
-
+            message: "",
+            error: "",
         };
     },
-    mounted() {
-        liff
-            .init({
-                liffId: import.meta.env.VITE_LIFF_ID
-            })
-            .then(() => {
-                this.message = "LIFF init succeeded.";
-            }).catch((e) => {
-                this.message = "LIFF init failed.";
-                this.error = `${e}`;
-            });
-    }
+    methods: {
+        async initLIFF() {
+        try {
+            await liff.init({ liffId: this.liffid });
+            this.message = "LIFF init succeeded.";
+        } catch (e) {
+            this.message = "LIFF init failed.";
+            this.error = `${e}`;
+        }
+        },
+    },
 };
 </script>
 
