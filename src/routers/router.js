@@ -2,9 +2,9 @@
 import { createApp } from 'vue';
 import { createRouter, createWebHistory } from 'vue-router';
 
-import Home from './views/Home.vue';
-import About from './views/About.vue';
-import Selection from './views/Selection.vue';
+import Home from '../views/Home.vue';
+import About from '../views/About.vue';
+import Selection from '../views/Selection.vue';
 
 // Route settings
 const routes = [
