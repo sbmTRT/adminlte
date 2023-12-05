@@ -30,20 +30,20 @@
                   </div>
                 </span>
               </div>
-              <div>
-                <form @submit.prevent="submitForm">
-                  <label for="userId">User ID:</label>
-                  <input type="text" id="userId" v-model="userId" required>
-
-                  <label for="password">Password:</label>
-                  <input type="password" id="password" v-model="password" required>
-
-                  <button type="submit">Submit</button>
-                </form>
-              </div><!-- Home.vue -->
-              <!-- /.info-box-content -->
             </div>
             <!-- /.info-box -->
+            <div class="info-box shadow  mt-4">
+              <form @submit.prevent="submitForm">
+                <label for="userId">User ID:</label>
+                <input type="text" id="userId" v-model="userId" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" v-model="password" required>
+
+                <button type="submit">Submit</button>
+              </form>
+            </div><!-- Home.vue -->
+              <!-- /.info-box-content -->
           </div>
           <!-- /.container-fluid -->
         </div>

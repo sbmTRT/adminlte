@@ -32,15 +32,16 @@
                 </div>
               </span>
             </div>
-            <div>
+            <!-- /.info-box-content -->
+          </div>
+            <!-- /.info-box -->
+            <div class="info-box shadow  mt-4">
               <h2>About Page</h2>
               <div v-if="submittedData">
                 <p>User ID: {{ submittedData.userId }}</p>
                 <p>Password: {{ submittedData.password }}</p>
               </div>
             </div>
-            <!-- /.info-box-content -->
-          </div>
           <!-- /.info-box -->
         </div>
         <!-- /.container-fluid -->
