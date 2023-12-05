@@ -45,6 +45,7 @@
                   <div v-if="submittedData">
                     <div class="col-sm-auto"><b>【User ID】</b> {{ submittedData.userId }}</div>
                     <div class="col-sm-auto"><b>【Password】</b> {{ submittedData.password }}</div>
+                    <div class="col-sm-auto"><b>【LIFF ID】】</b> <p v-if="liffid"> {{ liffid }}</p></div>
                     <div class="col-sm-auto"><b>【Line User ID】</b> <p v-if="userid">{{ userid }}</p></div>
                     <div class="col-sm-auto"><b>【Line User Name】</b> <p v-if="diaplayname">{{ diaplayname }}</p></div>
                   </div>
@@ -77,11 +78,9 @@ export default {
   data() {
     return {
       userid: "",
-      message: "",
       error: "",
-      displayname: "",
-      pictureurl: "",
-      statusmessage: ""
+      diaplayname: "",
+      liffid: import.meta.env.VITE_LIFF_ID,
 
     };
   },
@@ -97,15 +96,13 @@ export default {
           liff.getProfile().then((profile) => {
             const userId = profile.userId;
             const displayName = profile.displayName;
-            const pictureUrl = profile.pictureUrl;
-            const statusMessage = profile.statusMessage;
             this.userid = userId;
             this.diaplayname = displayName;
           }).catch((error) => {
             console.error('Error getting user profile', error);
           });
         } else {
-          this.userid = 'User ID: empty';
+          this.userid = 'empty';
         }
       }).catch((e) => {
         this.message = "LIFF init failed.";
