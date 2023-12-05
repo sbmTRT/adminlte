@@ -84,20 +84,18 @@ export default {
     },
     methods: {
         async initLIFF() {
-        try {
             liff
                 .init({
                     liffId: import.meta.env.VITE_LIFF_ID
                 })
                 .then(() => {
                     this.message = "LIFF init succeeded.";
-                })
-        }catch((e) => {
-            this.message = "LIFF init failed.";
-            this.error = `${e}`;
-        });
+                }).catch((e) => {
+                    this.message = "LIFF init failed.";
+                    this.error = `${e}`;
+                });
         },
-    },
+    }
 };
 </script>
 
