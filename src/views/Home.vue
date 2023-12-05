@@ -34,13 +34,17 @@
             <!-- /.info-box -->
             <div class="info-box shadow  mt-4">
               <form @submit.prevent="submitForm">
-                <label for="userId">User ID:</label>
-                <input type="text" id="userId" v-model="userId" required>
-
-                <label for="password">Password:</label>
-                <input type="password" id="password" v-model="password" required>
-
-                <button type="submit">Submit</button>
+                <div class="row">
+                  <label for="userId">User ID:</label>
+                  <input type="text" id="userId" v-model="userId" required>
+                </div>
+                <div class="row">
+                  <label for="password">Password:</label>
+                  <input type="password" id="password" v-model="password" required>
+                </div>
+                <div class="row">
+                  <button type="submit">Submit</button>
+                </div>
               </form>
             </div><!-- Home.vue -->
               <!-- /.info-box-content -->

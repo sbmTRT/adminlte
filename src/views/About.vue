@@ -36,10 +36,14 @@
           </div>
             <!-- /.info-box -->
             <div class="info-box shadow  mt-4">
-              <h2>About Page</h2>
-              <div v-if="submittedData">
-                <p>User ID: {{ submittedData.userId }}</p>
-                <p>Password: {{ submittedData.password }}</p>
+              <div class="row">
+                <h2>About Page</h2>
+              </div>
+              <div class="row">
+                <div v-if="submittedData">
+                  <p>User ID: {{ submittedData.userId }}</p>
+                  <p>Password: {{ submittedData.password }}</p>
+                </div>
               </div>
             </div>
           <!-- /.info-box -->
