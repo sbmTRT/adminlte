@@ -1,17 +1,7 @@
-import { createApp } from 'vue';
-import Vuex from 'vuex';
+// store.js
+import { createStore } from 'vuex';
 
-import App from './App.vue';
-import store from './store';
-import router from './routers/router';
-
-// Create a Vue app instance with the router and store
-const app = createApp(App);
-app.use(store);
-app.use(router);
-app.use(Vuex);
-
-export default new Vuex.Store({
+const store = createStore({
     state: {
         formData: null,
     },
@@ -21,3 +11,5 @@ export default new Vuex.Store({
         },
     },
 });
+
+export default store;
