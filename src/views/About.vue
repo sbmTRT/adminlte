@@ -65,7 +65,6 @@
     </div>
     <!-- /.content-wrapper -->
 </template>
-
 <script>
 import liff from "@line/liff";
 
@@ -83,17 +82,21 @@ export default {
         };
     },
     mounted() {
-        liff
-            .init({
-                liffId: import.meta.env.VITE_LIFF_ID
-            })
-            .then(() => {
+        this.initializeLIFF();
+    },
+    methods: {
+        async initializeLIFF() {
+            try {
+                await liff.init({
+                    liffId: import.meta.env.VITE_LIFF_ID
+                });
                 this.message = "LIFF init succeeded.";
-            }).catch((e) => {
+            } catch (e) {
                 this.message = "LIFF init failed.";
                 this.error = `${e}`;
-            });
-    }
+            }
+        },
+    },
 };
 </script>
 
