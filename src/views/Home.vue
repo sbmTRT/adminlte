@@ -32,25 +32,23 @@
               </div>
             </div>
             <!-- /.info-box -->
-            <div class="card">
-              <div class="card-body">
-                <form @submit.prevent="submitForm" class="form-horizontal">
-                  <!-- Form fields go here -->
-                  <div class="form-group">
-                    <label for="inputField" class="col-sm-2 control-label">Input Field:</label>
-                    <div class="col-sm-10">
-                      <input type="text" class="form-control" id="inputField" v-model="formData.inputField">
-                    </div>
+            <div class="info-box shadow  mt-4">
+              <form @submit.prevent="submitForm" class="form-horizontal">
+                <!-- Form fields go here -->
+                <div class="form-group">
+                  <label for="inputField" class="col-sm-2 control-label">Input Field:</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="inputField" v-model="formData.inputField">
                   </div>
+                </div>
 
-                  <!-- Submit button -->
-                  <div class="form-group">
-                    <div class="col-sm-offset-2 col-sm-10">
-                      <button type="submit" class="btn btn-primary">Submit</button>
-                    </div>
+                <!-- Submit button -->
+                <div class="form-group">
+                  <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-primary">Submit</button>
                   </div>
-                </form>
-              </div>
+                </div>
+              </form>
             </div>
             <!-- Home.vue -->
               <!-- /.info-box-content -->
