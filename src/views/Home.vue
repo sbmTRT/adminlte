@@ -32,21 +32,27 @@
               </div>
             </div>
             <!-- /.info-box -->
-            <div class="info-box shadow  mt-4">
-              <form @submit.prevent="submitForm">
-                <div class="row">
-                  <label for="userId">User ID:</label>
-                  <input type="text" id="userId" v-model="userId" required>
-                </div>
-                <div class="row">
-                  <label for="password">Password:</label>
-                  <input type="password" id="password" v-model="password" required>
-                </div>
-                <div class="row">
-                  <button type="submit">Submit</button>
-                </div>
-              </form>
-            </div><!-- Home.vue -->
+            <div class="card">
+              <div class="card-body">
+                <form @submit.prevent="submitForm" class="form-horizontal">
+                  <!-- Form fields go here -->
+                  <div class="form-group">
+                    <label for="inputField" class="col-sm-2 control-label">Input Field:</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="inputField" v-model="formData.inputField">
+                    </div>
+                  </div>
+
+                  <!-- Submit button -->
+                  <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <!-- Home.vue -->
               <!-- /.info-box-content -->
           </div>
           <!-- /.container-fluid -->
