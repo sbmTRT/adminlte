@@ -33,20 +33,15 @@
             </div>
             <!-- /.info-box -->
             <div class="info-box shadow  mt-4">
-              <form @submit.prevent="submitForm" class="form-horizontal">
-                <!-- Form fields go here -->
-                <div class="form-group">
-                  <label for="inputField" class="col-sm-2 control-label">Input Field:</label>
-                  <div class="col-sm-10">
-                    <input type="text" class="form-control" id="inputField" v-model="formData.inputField">
-                  </div>
+              <form @submit.prevent="submitForm">
+                <div class="row">
+                  <div class="col-sm-auto"><label for="userId">User ID:</label><b><input type="text" id="userId" v-model="userId" required></div>
                 </div>
-
-                <!-- Submit button -->
-                <div class="form-group">
-                  <div class="col-sm-offset-2 col-sm-10">
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                  </div>
+                <div class="row">
+                  <div class="col-sm-auto"><label for="password">Password:</label><b><input type="password" id="password" v-model="password" required></div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-auto"><button type="submit">Submit</button></div>
                 </div>
               </form>
             </div>
