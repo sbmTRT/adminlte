@@ -7,27 +7,32 @@ import Home from './views/Home.vue';
 import About from './views/About.vue';
 import Selection from './views/Selection.vue';
 import App from './App.vue';
+import store from './store';
 
 // Route settings
 const routes = [
     {
         path: '/',
         redirect: '/selection',
+        store,
     },
     {
         path: '/selection',
         name: 'Selection',
         component: Selection,
+        store,
     },
     {
         path: '/about',
         name: 'About',
         component: About,
+        store,
     },
     {
         path: '/home',
         name: 'Home',
         component: Home,
+        store,
     }
 ];
 

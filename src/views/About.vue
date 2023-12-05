@@ -32,7 +32,7 @@
                 </div>
               </span>
             </div>
-            <div class="col-md-12 col-sm-12 col-12">
+            <div>
               <h2>About Page</h2>
               <div v-if="submittedData">
                 <p>User ID: {{ submittedData.userId }}</p>
@@ -55,16 +55,10 @@
 
 <script>
 export default {
-  data() {
-    return {
-      submittedData: null,
-    };
-  },
-  created() {
-    // Listen for the event emitted by Home.vue
-    this.$root.$on('formSubmitted', (data) => {
-      this.submittedData = data;
-    });
+  computed: {
+    submittedData() {
+      return this.$store.state.formData;
+    },
   },
 };
 </script>

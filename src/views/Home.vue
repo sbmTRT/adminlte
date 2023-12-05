@@ -30,7 +30,7 @@
                   </div>
                 </span>
               </div>
-              <div class="col-md-12 col-sm-12 col-12">
+              <div>
                 <form @submit.prevent="submitForm">
                   <label for="userId">User ID:</label>
                   <input type="text" id="userId" v-model="userId" required>
@@ -40,7 +40,7 @@
 
                   <button type="submit">Submit</button>
                 </form>
-              </div>
+              </div><!-- Home.vue -->
               <!-- /.info-box-content -->
             </div>
             <!-- /.info-box -->
@@ -64,12 +64,15 @@ export default {
   },
   methods: {
     submitForm() {
-      this.$emit('formSubmitted', { userId: this.userId, password: this.password });
+      // Dispatch an action to update the store with form data
+      this.$store.commit('setFormData', {
+        userId: this.userId,
+        password: this.password,
+      });
     },
   },
 };
 </script>
-
 
 <style>
 #toastrButton {
