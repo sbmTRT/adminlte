@@ -69,6 +69,8 @@ export default {
         userId: this.userId,
         password: this.password,
       });
+      // Redirect to the About route
+      this.$router.push('/about');
     },
   },
 };
