@@ -82,19 +82,17 @@ export default {
             error: "",
         };
     },
-    methods: {
-        async initLIFF() {
-            liff
-                .init({
-                    liffId: import.meta.env.VITE_LIFF_ID
-                })
-                .then(() => {
-                    this.message = "LIFF init succeeded.";
-                }).catch((e) => {
-                    this.message = "LIFF init failed.";
-                    this.error = `${e}`;
-                });
-        },
+    mounted() {
+        liff
+            .init({
+                liffId: import.meta.env.VITE_LIFF_ID
+            })
+            .then(() => {
+                this.message = "LIFF init succeeded.";
+            }).catch((e) => {
+                this.message = "LIFF init failed.";
+                this.error = `${e}`;
+            });
     }
 };
 </script>
