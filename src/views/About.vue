@@ -32,6 +32,13 @@
                 </div>
               </span>
             </div>
+            <div class="col-md-12 col-sm-12 col-12">
+              <h2>About Page</h2>
+              <div v-if="submittedData">
+                <p>User ID: {{ submittedData.userId }}</p>
+                <p>Password: {{ submittedData.password }}</p>
+              </div>
+            </div>
             <!-- /.info-box-content -->
           </div>
           <!-- /.info-box -->
@@ -48,8 +55,18 @@
 
 <script>
 export default {
-  // View-specific logic goes here
-}
+  data() {
+    return {
+      submittedData: null,
+    };
+  },
+  created() {
+    // Listen for the event emitted by Home.vue
+    this.$root.$on('formSubmitted', (data) => {
+      this.submittedData = data;
+    });
+  },
+};
 </script>
 
 <style scoped>

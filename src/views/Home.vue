@@ -30,6 +30,17 @@
                   </div>
                 </span>
               </div>
+              <div class="col-md-12 col-sm-12 col-12">
+                <form @submit.prevent="submitForm">
+                  <label for="userId">User ID:</label>
+                  <input type="text" id="userId" v-model="userId" required>
+
+                  <label for="password">Password:</label>
+                  <input type="password" id="password" v-model="password" required>
+
+                  <button type="submit">Submit</button>
+                </form>
+              </div>
               <!-- /.info-box-content -->
             </div>
             <!-- /.info-box -->
@@ -45,8 +56,18 @@
 
 <script>
 export default {
-  // View-specific logic goes here
-}
+  data() {
+    return {
+      userId: '',
+      password: '',
+    };
+  },
+  methods: {
+    submitForm() {
+      this.$emit('formSubmitted', { userId: this.userId, password: this.password });
+    },
+  },
+};
 </script>
 
 
