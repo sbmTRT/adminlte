@@ -47,7 +47,7 @@
                                         <div class="col-sm-auto"><b>【Password】</b> {{ submittedData.password }}</div>
                                         <div class="col-sm-auto"><b>【LIFF ID】】</b> <p v-if="liffid"> {{ liffid }}</p></div>
                                         <div class="col-sm-auto"><b>【message】</b> <p v-if="message">{{ message }}</p></div>
-                                        <div class="col-sm-auto"><b>【error】</b> <p v-if="error"><code>{{ error }}</p></div>
+                                        <div class="col-sm-auto"><b>【error】</b> <p v-if="error"><code>{{ error }}</code></p></div>
                                     </div>
                                 </div>
                             </span>
