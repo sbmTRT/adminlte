@@ -48,6 +48,7 @@
                                         <div class="col-sm-auto"><b>【LIFF ID】】</b> <p v-if="liffid"> {{ liffid }}</p></div>
                                         <div class="col-sm-auto"><b>【Line User ID】</b> <p v-if="userid">{{ userid }}</p></div>
                                         <div class="col-sm-auto"><b>【Line User Name】</b> <p v-if="diaplayname">{{ diaplayname }}</p></div>
+                                        <div class="col-sm-auto"><b>【message】</b> <p v-if="message">{{ message }}</p></div>
                                         <div class="col-sm-auto"><b><p v-if="error"><code>{{ error }}</code></p></div>
                                     </div>
                                     </div>
