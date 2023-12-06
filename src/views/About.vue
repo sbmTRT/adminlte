@@ -45,12 +45,6 @@
                                         <div v-if="submittedData">
                                             <div class="col-sm-auto"><b>【User ID】</b> {{ submittedData.userId }}</div>
                                             <div class="col-sm-auto"><b>【Password】</b> {{ submittedData.password }}</div>
-                                            <div class="col-sm-auto"><b>【USER ID】】</b> {{ userid }}</div>
-                                            <div class="col-sm-auto"><b>【Display Name】</b>{{ displayname }}</div>
-                                            <div class="col-sm-auto"><b>【Pictureurl】</b>{{ pictureurl }}</div>
-                                            <div class="col-sm-auto"><b>【Status Message】</b>{{ statusmessage }}</div>
-                                            <div class="col-sm-auto"><b>【Message】</b> {{ message }}</div>
-                                            <div class="col-sm-auto"><b>【Error】</b>{{ error }}</div>
                                         </div>
                                     </div>
                                 </div>
@@ -73,44 +67,6 @@
 import liff from "@line/liff";
 
 export default {
-  data() {
-    return {
-      userid: "",
-      message: "",
-      error: "",
-      displayname: "",
-      pictureurl: "",
-      statusmessage: ""
-    };
-  },
-  mounted() {
-    liff
-      .init({
-        liffId: import.meta.env.VITE_LIFF_ID
-      })
-      .then(() => {
-        this.message = "LIFF init succeeded.";
-        if (liff.isLoggedIn()) {
-          // Get user profile
-          liff.getProfile().then((profile) => {
-            const userId = profile.userId;
-            const displayName = profile.displayName;
-            const pictureUrl = profile.pictureUrl;
-            const statusMessage = profile.statusMessage;
-            this.userid = userId;
-            this.displayname = displayName;
-            this.statusmessage = statusMessage;
-          }).catch((error) => {
-            console.error('Error getting user profile', error);
-          });
-        } else {
-          this.userid = 'empty';
-        }
-      }).catch((e) => {
-        this.message = "LIFF init failed.";
-        this.error = `${e}`;
-      });
-  },
   computed: {
     submittedData() {
       return this.$store.state.formData;
