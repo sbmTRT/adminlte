@@ -34,7 +34,7 @@
                         </div>
                         <!-- /.info-box-content -->
                     </div>
-                    <div class="info-box shadow mt-4" v-if="liffInitialized">
+                    <div class="info-box shadow mt-4">
                         <span class="info-box-icon bg-warning">
                             <i class="fas fa-wrench"></i>
                         </span>
